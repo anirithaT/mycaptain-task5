@@ -1,0 +1,16 @@
+def most_frequency(str1):
+    dict = {}
+    for n in str1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+       
+    
+    ed=(sorted(dict.items(),key=lambda kv:kv[1],reverse=True))
+    for i,j in ed:
+        print(i,"= 0",j)
+
+str1=input()
+most_frequency(str1)
